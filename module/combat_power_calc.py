@@ -25,7 +25,7 @@ def combat_power_calc(hp,
                 + burst_level * 0.02
 
     # スキル補正（アプデ後）
-    rank_sum_except_adv_code = 84  # => 仮入力
+    rank_sum_except_adv_code = 0  # => 仮入力
     rank_sum_of_adv_code = 0       # => 仮入力
 
     skill_coef = skill_coef \
