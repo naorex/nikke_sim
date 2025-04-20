@@ -10,7 +10,7 @@ def combat_power_calc(hp,
     """
 
     # クリティカル補正
-    critical_coef = 1.075
+    critical_coef = 1.075  # => 仮入力
 
     # 体力補正
     health_coef = defence_power * 100 + hp

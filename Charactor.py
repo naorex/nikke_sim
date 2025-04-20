@@ -1,7 +1,7 @@
 from module.combat_power_calc import combat_power_calc
 
 class Charactor:
-    """ニケのキャラクターパラメータを定義するクラス
+    """ニケのキャラクターパラメータを扱うクラス
 
     Ref:
         https://youtu.be/r6SZJfq0CTQ?si=Qon1cBYqupGoQLG_
