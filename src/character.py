@@ -9,6 +9,8 @@ class Character:
         self.attack_power = service.get_attack_power(name)
         self.defence_power = service.get_defence_power(name)
         self.combat_power = self.calc_combat_power()
+        self.class_ = service.get_class(name)
+        self.element = service.get_element(name)
 
     def calc_combat_power(self) -> int:
 

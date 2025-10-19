@@ -3,7 +3,13 @@ from flask import Flask
 app = Flask(__name__)
 
 nikke_character = {
-    "SoldierEG": {"hp": 244350, "attack_power": 4805, "defence_power": 1837}
+    "SoldierEG": {
+        "hp": 244350,
+        "attack_power": 4805,
+        "defence_power": 1837,
+        "class": "Attacker",
+        "element": "Electric",
+    }
 }
 
 

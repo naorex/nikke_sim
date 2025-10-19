@@ -17,6 +17,8 @@ class Service {
     +get_hp()
     +get_attack_power()
     +get_defence_power()
+    +get_class()
+    +get_element()
 }
 
 class Character {
@@ -25,22 +27,14 @@ class Character {
     +attack_power : int
     +defence_power : int
     +combat_power : int
+    +class_ : str
+    +element : str
     +calc_combat_power()
 }
-
-class Attacker
-
-class Defender
-
-class Supporter
 
 CharacterData <|-- CharacterDataFromAPI : is-a
 CharacterData <.. Service : dep.
 
 Service <.. Character : dep.
-
-Character <|-- Attacker : "is-a"
-Character <|-- Defender : "is-a"
-Character <|-- Supporter : "is-a"
 
 ```

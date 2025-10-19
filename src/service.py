@@ -3,7 +3,7 @@ from abc import ABCMeta, abstractmethod
 import requests
 
 
-class CharacterData:
+class CharacterData(metaclass=ABCMeta):
     """インターフェース"""
 
     @abstractmethod
@@ -35,3 +35,11 @@ class Service:
     def get_defence_power(self, name: str) -> int:
         character = self.character_data.get_character_by_id(name)
         return character["defence_power"]
+
+    def get_class(self, name: str) -> str:
+        character = self.character_data.get_character_by_id(name)
+        return character["class"]
+
+    def get_element(self, name: str) -> str:
+        character = self.character_data.get_character_by_id(name)
+        return character["element"]
