@@ -32,9 +32,8 @@ class Character {
     +calc_combat_power()
 }
 
-CharacterData <|-- CharacterDataFromAPI : is-a
-CharacterData <.. Service : dep.
-
-Service <.. Character : dep.
+Character ..> Service : dep.
+Service o-- CharacterData : agg.
+CharacterData <|.. CharacterDataFromAPI : real.
 
 ```
